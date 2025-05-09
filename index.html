@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KadakeCoffee ☕</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- -----cdn link---------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- swiper js cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar section-content">
+        <a href="#Home" class="nav-logo">
+          <h2 class="logo-text">KadakeCoffee</h2>
+        </a>
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fa-solid fa-x"></button>
+          <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#Menu" class="nav-link">Menu</a></li>
+          <li class="nav-item"> <a href="#Testimonials" class="nav-link">Testimonials</a></li>
+          <li class="nav-item"> <a href="#contact" class="nav-link">Contact</a></li>
+          <li class="nav-item"><a href="#FAQ" class="nav-link">FAQ</a></li>
+          <li class="nav-item">
+            <a href="javascript:void(0)" class="nav-link" id="user-icon"><i class="fa-solid fa-user"></i></a>
+          </li>
+        </ul>
+        <button id="menu-open-button" class="fa-solid fa-bars"></button>
+      </nav>
+    </header>
+
+ <!-- Signup Form (Initially Hidden) -->
+ <div id="signup-form-container" class="signup-form-container">
+    <div class="signup-form">
+        <i class="fa-solid fa-x" id="close-signup-form"></i>
+     
+      <h2>Signup </h2>
+      <form id="signup-form">
+        <input type="text" id="username" placeholder="Username" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Popup (Initially Hidden) -->
+  <div id="success-popup" class="success-popup">
+    <p>Signup Successful!</p>
+  </div>
+
+    <main>
+      <section class="hero-section" id="Home">
+        <div class="section-content">
+          <div class="hero-details">
+            <h2 class="title">Best Coffee</h2>
+            <h3 class="subtitle">Savor the Strength. Taste the Tradition</h3>
+            <p class="description">
+              At Kadake Coffee, every cup tells a story — from ethically sourced
+              beans to expertly roasted blends. Taste the difference in every
+              sip, whether you enjoy bold, smooth, or bright flavor profiles.
+              Coffee, done right.
+            </p>
+            <div class="buttons">
+              <a href="#" class="button order-now">Order Now</a>
+              <a href="#" class="button contact-us">Contact Us</a>
+            </div>
+          </div>
+          <div class="hero-img-wrapper">
+            <img
+              src="images/coffee-hero-section-removebg-preview.png"
+              alt="Cup of coffee in hero section"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="about-section" id="About">
+      <div class="section-content">
+        <div class="about-image-wrapper">
+          <img src="images/about-image.jpg" alt="About" class="about-image" />
+        </div>
+        <div class="about-details">
+          <div class="section-title">About Us</div>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            expedita dolore magni repudiandae quasi veritatis rerum. Tenetur
+            ratione voluptates libero deserunt, iste excepturi obcaecati minima
+            provident placeat dolorum odio nostrum.
+          </p>
+          <div class="social-link-list">
+            <a class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+            <a class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a class="social-link"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Menu" id="Menu">
+      <div class="section-content">
+        <h2 class="section-title">Menu</h2>
+        <a
+          href="C:\Users\hp\OneDrive\NISHU RAJPUT\Amazon clon\amazon\web development\NEW PROJECTS\pj\menu.html"
+        >
+          View all <i class="fa-solid fa-arrow-right"></i
+        ></a>
+        <div class="menu-grid">
+          <div class="menu-card">
+            <img src="images/desserts.png" alt="menu" />
+            <div class="menu-card-content">
+              <h4>Dessert</h4>
+              <p>Satiate your palate and take you on a culinary treat.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="images/cold-beverages.png" alt="menu" />
+            <div class="menu-card-content">
+              <h4>Caramel Pecan Cinnamon roll</h4>
+              <p>Satiate your palate and take you on a culinary treat.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="images/refreshment.png" alt="menu" />
+            <div class="menu-card-content">
+              <h4>Caramel Pecan Cinnamon roll</h4>
+              <p>Satiate your palate and take you on a culinary treat.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="images/special-combo.png" alt="menu" />
+            <div class="menu-card-content">
+              <h4>Caramel Pecan Cinnamon roll</h4>
+              <p>Satiate your palate and take you on a culinary treat.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="images/hot-beverages.png" alt="menu" />
+            <div class="menu-card-content">
+              <h4>Caramel Pecan Cinnamon roll</h4>
+              <p>Satiate your palate and take you on a culinary treat.</p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="images/burger-frenchfries.png" alt="menu" />
+            <div class="menu-card-content">
+              <h4>Caramel Pecan Cinnamon roll</h4>
+              <p>Satiate your palate and take you on a culinary treat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Testimonials-section" id="Testimonials">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="section-content">
+          <div class="slider-container swiper">
+            <ul class="Testimonials-list swiper-wrapper">
+              <li class="Testimonials swiper-slide">
+                <img src="images/user-1.jpg" alt="user" class="user-img" />
+                <h3 class="name">Sophia</h3>
+                <i class="feedback">
+                  The coffee here is absolutely amazing! A must-visit spot for
+                  every coffee lover.
+                </i>
+              </li>
+              <li class="Testimonials swiper-slide">
+                <img src="images/user-2.jpg" alt="user" class="user-img" />
+                <h3 class="name">Liam</h3>
+                <i class="feedback">
+                  A beautiful, cozy place to relax and enjoy a perfect cup of
+                  coffee. Highly recommended!
+                </i>
+              </li>
+              <li class="Testimonials swiper-slide">
+                <img src="images/user-3.jpg" alt="user" class="user-img" />
+                <h3 class="name">Alexander</h3>
+                <i class="feedback">
+                  Great atmosphere and the best coffee I've had in a long time.
+                  I'll be back for sure!
+                </i>
+              </li>
+              <li class="Testimonials swiper-slide">
+                <img src="images/user-4.jpg" alt="user" class="user-img" />
+                <h3 class="name">Emma</h3>
+                <i class="feedback">
+                  A hidden gem! The staff is friendly, and the coffee is rich
+                  and flavorful. Can't get enough!
+                </i>
+              </li>
+            </ul>
+      
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+      
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+   
+    <section class="contact-section" id="contact">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="section-content">
+        <ul class="content-info-list">
+          <li class="contact-info">
+            <i class="fa-solid fa-location-crosshairs"></i>
+            <p>123 Campsite Avenue,Wilderness ,CA 98765</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-solid fa-phone"></i>
+            <p>(123)456-78909</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-solid fa-clock"></i>
+            <p>Monday-Friday : 9:00AM-5:PM</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-solid fa-clock"></i>
+            <p>Sunday</p>
+          </li>
+          <li class="contact-info">
+            <i class="fa-solid fa-globe"></i>
+            <p>www.kadakecoffee.com</p>
+          </li>
+        </ul>
+        <form action="#" class="contact-form">
+          <input
+            type="text"
+            placeholder="Enter your Name "
+            class="form-input"
+            required
+          />
+          <input
+            type="email"
+            placeholder="kadakecoffee@gmail "
+            class="form-input"
+            required
+          />
+          <textarea placeholder="message" class="form-input"></textarea>
+          <button class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="FAQ-section" id="FAQ">
+      <h2 class="section-title">Customer Questions</h2>
+      <div class="section-div">
+        <div class="question">
+          <div>
+            <h4>What types of coffee do you offer?</h4>
+            <p class="hide">
+              We offer a variety of blends including espresso, arabica, cold
+              brew, and more. All beans are ethically sourced
+            </p>
+          </div>
+          <div class="add">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-minus hide"></i>
+          </div>
+        </div>
+        <div class="question">
+          <div>
+            <h4>Do you deliver?</h4>
+            <p class="hide">
+              Yes, we deliver across the country with free shipping on orders
+              above ₹ 30.
+            </p>
+          </div>
+          <div class="add">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-minus hide"></i>
+          </div>
+        </div>
+        <div class="question">
+          <div>
+            <h4>Can I subscribe for monthly coffee deliveries?</h4>
+            <p class="hide">
+              Yes! We offer customizable subscription plans with free shipping
+              and member-only discounts.
+            </p>
+          </div>
+          <div class="add">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-minus hide"></i>
+          </div>
+        </div>
+        <div class="question">
+          <div>
+            <h4>What grind sizes do you offer?</h4>
+            <p class="hide">
+              We offer whole beans, coarse grind (for French press), medium
+              (drip), and fine (espresso).
+            </p>
+          </div>
+          <div class="add">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-minus hide"></i>
+          </div>
+        </div>
+        <div class="question">
+          <div>
+            <h4>Are your coffee beans organic?</h4>
+            <p class="hide">
+              Yes, we source our beans from certified organic farms around the
+              world.
+            </p>
+          </div>
+          <div class="add">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-solid fa-minus hide"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="foot-panel2">
+        <div class="footer-logo">
+          <h1>KadakeCoffee</h1>
+        </div>
+        <ul>
+          <p>About KadakeCoffee</p>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Our Coffee</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+        <ul>
+          <p>Connect With Us</p>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+        <ul>
+          <p>Partner With Us</p>
+          <li><a href="#">Wholesale</a></li>
+          <li><a href="#">Franchise Opportunities</a></li>
+          <li><a href="#">Affiliate Program</a></li>
+          <li><a href="#">Become a Supplier</a></li>
+        </ul>
+        <ul>
+          <p>Customer Service</p>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Our Quality Promise</a></li>
+          <li><a href="#">Return Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="foot-panel4">
+        <div class="copyright">
+          &copy; <span id="year"></span> KadakeCoffee.
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
