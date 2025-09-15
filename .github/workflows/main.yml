@@ -1,0 +1,25 @@
+name: HTML & CSS Lint
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install htmlhint and stylelint
+        run: |
+          npm install -g htmlhint stylelint stylelint-config-standard stylelint-config-recommended
+
+      - name: Run HTML Hint
+        run: htmlhint ./index.html
+
+      - name: Run Stylelint
+        run: stylelint "**/*.css"
